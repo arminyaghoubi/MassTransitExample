@@ -1,0 +1,16 @@
+@Retry.NotificationAPI_HostAddress = http://localhost:5088
+
+GET {{Retry.NotificationAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{Retry.NotificationAPI_HostAddress}}/SendEmail
+Accept: application/json
+Content-Type: application/json
+{
+  "Email":"ArminYaghoubi1@gmail.com",
+  "Message":"Hello Retry MassTransit."
+}
+
+###

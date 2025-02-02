@@ -1,0 +1,10 @@
+@Basic.OrderService_HostAddress = http://localhost:5293
+
+POST {{Basic.OrderService_HostAddress}}/CreateOrder
+Accept: application/json
+Content-Type: application/json
+{
+  "CustomerEmail":"ArminYaghoubi1@gmail.com",
+  "TotalAmount":5000000
+}
+###
