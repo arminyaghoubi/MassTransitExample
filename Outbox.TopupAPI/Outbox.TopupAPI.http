@@ -1,0 +1,16 @@
+@Outbox.TopupAPI_HostAddress = http://localhost:5012
+
+GET {{Outbox.TopupAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{Outbox.TopupAPI_HostAddress}}/Topup/Sale
+Content-Type: application/json
+{
+  "TerminalId":"C0000301",
+  "SystemTrace":"000001",
+  "Mobile":"09912509526",
+  "Amount":100000
+}
+###
